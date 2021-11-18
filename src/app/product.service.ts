@@ -5,10 +5,10 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class ProductService {
-  private _albumURL = "../assets/album.json";
+  private _albumUrl = "../assets/album.json";
   constructor(private _http : Http) {
    }
    getAlbum(id:number):Observable<any>{
-      return this._http.get(this._albumURL).map((response)=>response.json())
+      return this._http.get(this._albumUrl).map((response)=>response.json())
    }
 }
