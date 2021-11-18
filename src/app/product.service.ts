@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class ProductService {
-  private _albumURL:string = "../assets/album.json";
+  private _albumURL = "../assets/album.json";
   constructor(private _http : Http) {
    }
    getAlbum(id:number):Observable<any>{
